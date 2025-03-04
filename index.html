@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sony Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="javascript" href="sony.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">SONY</a>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#specs">Features</a></li>
+        <li><a href="#overview">Product Overview</a></li>
+        <li><a href="#photos">Sample Photos</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <img src="moon.png" id="moon">
+        <script>
+          var moon = document.getElementById("moon");
+          moon.onclick = function () {
+            document.body.classList.toggle("darkmode");
+            if (document.body.classList.contains("darkmode")) {
+              moon.src = "moon.png";
+              moon.style.background = "#fff";
+            }
+            else {
+              moon.src = "sun.png";
+              moon.style.background = "#1b1b1b";
+            }
+          }
+        </script>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="img"></div>
+    <div class="center">
+      <div class="title">Sony &alpha;7s</div>
+      <div class="sub_title">The power of one frame</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+      <ul>
+        <li><a href="https://www.sony.co.in/microsite/careers/?cid=gwt:footer:career" target="_blank">Careers</a></li>
+        <li><a href="https://www.sony.co.in/microsite/termsofuse/?cid=gwt:footer:terms" target="_blank">Terms and Conditions</a></li>
+        <li><a href="https://www.sony.co.in/microsite/privacypolicy/?cid=gwt:footer:privacy" target="_blank">Privacy Policy</a></li>
+        <li><a href="https://www.sony.co.in/microsite/corporate/?cid=gwt:footer:info" target="_blank">Company Info</a></li>
+      </ul>
+      <p class="Copyright">Copyright &copy; 2024 Sony India. All rights reserved</p>
+      <div class="social">
+        <h5>Follow us on Social Media</h5>
+        <ul>
+          <li> <a href="https://www.facebook.com/SonyIndia" target="_blank" class="fa-brands fa-facebook"></a></li>
+          <li><a href="https://www.instagram.com/sonyindiaofficial" target="_blank" class="fa-brands fa-instagram"></a>
+          </li>
+          <li><a href="https://www.sony.co.in/electronics/interchangeable-lens-cameras/ilce-9m3#" target="_blank"
+              class="fa-brands fa-google"></a>
+          </li>
+          <li><a href="https://twitter.com/sony_india" target="_blank" class="fa-brands fa-twitter"></a></li>
+          <li><a href="https://www.youtube.com/@ImagingbySony" target="_blank" class="fa-brands fa-youtube"></a></li>
+        </ul>
+  </footer>
+  </div>
+</body>
+</html>

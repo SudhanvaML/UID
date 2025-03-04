@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* ::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-track{
+  background: #1b1b1b;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 0, 0);
+  border: 3px solid white;
+  border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(0, 217, 255);
+  border: 3px solid rgb(255, 255, 255);
+  transition: 3s ease-out;
+} */
+:root{
+  --primary-color:#1b1b1b;
+  --second-color:#fff;
+  --third-color:#000;
+}
+.darkmode{
+  --primary-color:#fff;
+  --second-color:#000;
+  --third-color:#fff;
+}
+
+#moon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 2px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+body{
+  background-color: var(--primary-color);
+}
+::selection {
+  color: var(--third-color);
+  background: var(--second-color);
+} 
+
+
+nav {
+  position: fixed;
+  background: var(--primary-color);
+  width: 100%;
+  padding: 5px 0;
+  z-index: 15;
+}
+nav .menu {
+  max-width: 1450px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a {
+  text-decoration: none;
+  color: var(--second-color);
+  font-family: 'SST-bold';
+  font-size: 40px;
+  font-weight: 100;
+}
+.menu ul {
+  display: inline-flex;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--second-color);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover {
+  background: var(--second-color);
+  color: var(--third-color);
+}
+
+.img {
+  background: url("cam13.jpg") no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+.img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: var(--third-color); */
+}
+.center {
+  position: absolute;
+  top: 32%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title {
+  color:white;
+  font-size: 85px;
+  font-weight: 600;
+}
+.center .sub_title {
+  color: white;
+  font-size: 25px ;
+  font-weight: 600;
+}
+.center .btns {
+  margin-top: 20px;
+}
+.center .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid var(--second-color);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+footer {
+  width: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: 0px;
+  /* padding: 0px; */
+  bottom: 0px;
+  z-index: 15;
+}
+
+
+.footer ul:first-child {
+  margin-top: 10px;
+}
+.footer ul li {
+  list-style: none;
+  /* margin: 30px; */
+  display: inline;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: var(--second-color);
+  font-size: 10px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+.footer ul li a:hover {
+  background: var(--second-color);
+  color: var(--third-color);
+}
+.social{
+  display: inline-flex;
+  text-align: center;
+  /* margin-left: 150px; */
+  /* margin-top: 10px; */
+}
+.social ul{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.social ul li a{
+  cursor: pointer;
+  color: var(--second-color);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 6px;
+  font-size: 20px;
+}
+.social ul li a:hover{
+  color: var(--primary-color);
+}
+.social h5{
+  color:var(--second-color);
+  font-weight: 500;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.Copyright{
+  color: var(--second-color);
+  text-align: center;
+  padding: 10px;
+  margin: 0px 140px;
+  margin-top: 5px;
+  font-size: 1px;
+  /* margin-left: 110px; */
+}
